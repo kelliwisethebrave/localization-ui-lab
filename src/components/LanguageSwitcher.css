@@ -1,0 +1,28 @@
+
+/*
+button {
+  white-space: nowrap;
+  width: 180px;
+}
+
+white-space nowrap causes the text of a long button to flow off of the button
+
+button {
+  white-space: normal;
+  width: 180px;
+}
+
+this causes a linebreak if needed
+*/
+
+
+button {
+  max-width: 100%;
+  padding: 0.75rem 1rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+/*allows the button to grow naturally with its text, up to the available container width
+
+In a larger application, I would recommend using a component-specific class, such as .language-switcher__button, instead of styling every button globally.
+/
