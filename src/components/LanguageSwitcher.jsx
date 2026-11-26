@@ -8,13 +8,16 @@ function LanguageSwitcher() {
     en: {
       greeting: "Welcome",
       description: "Manage your devices",
-      button: "Switch to French",
+      save: "Save",
+      cancel: "Cancel",
+      changeLanguage: "Switch to French",
     },
     fr: {
       greeting: "Bienvenue",
       //greeting: "Bienvenue dans votre espace de gestion des appareils",
       // description is intentionally missing
-      button: "Passer en anglais",
+      cancel: "Annuler",
+      changeLanguage: "Passer en anglais",
       //button: "Revenir à la version anglaise de l’application",
     },
   };
@@ -31,7 +34,7 @@ function LanguageSwitcher() {
         {translations[language]?.description ?? translations.en.description}
       </p>
 
-      <button onClick={switchLanguage}>{translations[language].button}</button>
+      <button onClick={switchLanguage}>{translations[language].changeLanguage}</button>
     </div>
   );
 }
